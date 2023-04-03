@@ -1,0 +1,108 @@
+Apr-03 16:18:24.052 [main] DEBUG nextflow.cli.Launcher - $> nextflow run /mnt/c/Users/KIIT/Downloads/rnaseq-nf/rnaseq-nf/main.nf
+Apr-03 16:18:24.269 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 22.10.6
+Apr-03 16:18:24.339 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/sejyotiarna/.nextflow/plugins; core-plugins: nf-amazon@1.11.3,nf-azure@0.14.2,nf-codecommit@0.1.2,nf-console@1.0.4,nf-ga4gh@1.0.4,nf-google@1.4.5,nf-tower@1.5.6,nf-wave@0.5.3
+Apr-03 16:18:24.367 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Apr-03 16:18:24.375 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Apr-03 16:18:24.380 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+Apr-03 16:18:24.424 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Apr-03 16:18:24.457 [main] DEBUG nextflow.config.ConfigBuilder - Found config base: /mnt/c/Users/KIIT/Downloads/rnaseq-nf/rnaseq-nf/nextflow.config
+Apr-03 16:18:24.460 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /mnt/c/Users/KIIT/Downloads/rnaseq-nf/rnaseq-nf/nextflow.config
+Apr-03 16:18:24.491 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Apr-03 16:18:25.476 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declararion
+Apr-03 16:18:25.504 [main] INFO  nextflow.cli.CmdRun - Launching `/mnt/c/Users/KIIT/Downloads/rnaseq-nf/rnaseq-nf/main.nf` [spontaneous_rosalind] DSL2 - revision: fd25deba69
+Apr-03 16:18:25.506 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Apr-03 16:18:25.507 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Apr-03 16:18:25.519 [main] DEBUG nextflow.secret.LocalSecretsProvider - Secrets store: /home/sejyotiarna/.nextflow/secrets/store.json
+Apr-03 16:18:25.530 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@4c58255] - activable => nextflow.secret.LocalSecretsProvider@4c58255
+Apr-03 16:18:25.642 [main] DEBUG nextflow.Session - Session UUID: 91d44aa9-003c-4a49-a4ba-2c1b3dcc9ca5
+Apr-03 16:18:25.643 [main] DEBUG nextflow.Session - Run name: spontaneous_rosalind
+Apr-03 16:18:25.644 [main] DEBUG nextflow.Session - Executor pool size: 8
+Apr-03 16:18:25.658 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Apr-03 16:18:25.694 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 22.10.6 build 5843
+  Created: 23-01-2023 23:20 UTC (24-01-2023 04:50 IDT)
+  System: Linux 5.15.90.1-microsoft-standard-WSL2
+  Runtime: Groovy 3.0.13 on OpenJDK 64-Bit Server VM 11.0.17+8-post-Ubuntu-1ubuntu222.04
+  Encoding: UTF-8 (UTF-8)
+  Process: 570@sejyotiarna [127.0.1.1]
+  CPUs: 8 - Mem: 3.8 GB (332.6 MB) - Swap: 1 GB (1022.2 MB)
+Apr-03 16:18:25.754 [main] DEBUG nextflow.Session - Work-dir: /mnt/c/Users/KIIT/Downloads/rnaseq-nf/work [v9fs]
+Apr-03 16:18:25.804 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Apr-03 16:18:25.820 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Apr-03 16:18:25.854 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Apr-03 16:18:25.869 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 9; maxThreads: 1000
+Apr-03 16:18:26.098 [main] DEBUG nextflow.Session - Session start
+Apr-03 16:18:26.439 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Apr-03 16:18:26.463 [main] INFO  nextflow.Nextflow -  RNAseq-nf pipeline
+ ===================
+ transcriptome: /mnt/c/Users/KIIT/Downloads/rnaseq-nf/rnaseq-nf/data/ggal/ggal_1_48850000_49020000.Ggal71.500bpflank.fa
+ reads        : /mnt/c/Users/KIIT/Downloads/rnaseq-nf/rnaseq-nf/data/ggal/ggal_gut_{1,2}.fq
+ outdir       : results
+
+Apr-03 16:18:27.157 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Apr-03 16:18:27.158 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Apr-03 16:18:27.167 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Apr-03 16:18:27.175 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=8; memory=3.8 GB; capacity=8; pollInterval=100ms; dumpInterval=5m
+Apr-03 16:18:27.303 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Apr-03 16:18:27.304 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Apr-03 16:18:27.319 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Apr-03 16:18:27.321 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Apr-03 16:18:27.372 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Apr-03 16:18:27.373 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Apr-03 16:18:27.378 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: FASTQC, RNASEQ:INDEX, RNASEQ:QUANT, MULTIQC, INDEX, RNASEQ:FASTQC, QUANT
+Apr-03 16:18:27.380 [main] DEBUG nextflow.Session - Igniting dataflow network (5)
+Apr-03 16:18:27.394 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > RNASEQ:INDEX
+Apr-03 16:18:27.394 [PathVisitor-1] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: /mnt/c/Users/KIIT/Downloads/rnaseq-nf/rnaseq-nf/data/ggal/; pattern: ggal_gut_{1,2}.fq; options: [checkIfExists:true]
+Apr-03 16:18:27.397 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > RNASEQ:FASTQC
+Apr-03 16:18:27.400 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > RNASEQ:QUANT
+Apr-03 16:18:27.407 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > MULTIQC
+Apr-03 16:18:27.413 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Apr-03 16:18:27.415 [main] DEBUG nextflow.Session - Session await
+Apr-03 16:18:27.814 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-03 16:18:27.820 [Task submitter] INFO  nextflow.Session - [85/7a7fe3] Submitted process > RNASEQ:INDEX (ggal_1_48850000_49020000)
+Apr-03 16:18:27.862 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-03 16:18:27.865 [Task submitter] INFO  nextflow.Session - [10/6ee2f3] Submitted process > RNASEQ:FASTQC (FASTQC on ggal_gut)
+Apr-03 16:18:28.583 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: RNASEQ:FASTQC (FASTQC on ggal_gut); status: COMPLETED; exit: 127; error: -; workDir: /mnt/c/Users/KIIT/Downloads/rnaseq-nf/work/10/6ee2f39caa0f9974f76e25c322be57]
+Apr-03 16:18:28.634 [Task monitor] ERROR nextflow.processor.TaskProcessor - Error executing process > 'RNASEQ:FASTQC (FASTQC on ggal_gut)'
+
+Caused by:
+  Process `RNASEQ:FASTQC (FASTQC on ggal_gut)` terminated with an error exit status (127)
+
+Command executed:
+
+  fastqc.sh "ggal_gut" "ggal_gut_1.fq ggal_gut_2.fq"
+
+Command exit status:
+  127
+
+Command output:
+  (empty)
+
+Command error:
+  /mnt/c/Users/KIIT/Downloads/rnaseq-nf/rnaseq-nf/bin/fastqc.sh: line 6: fastqc: command not found
+
+Work dir:
+  /mnt/c/Users/KIIT/Downloads/rnaseq-nf/work/10/6ee2f39caa0f9974f76e25c322be57
+
+Tip: view the complete command output by changing to the process work dir and entering the command `cat .command.out`
+Apr-03 16:18:28.677 [Task monitor] DEBUG nextflow.Session - Session aborted -- Cause: Process `RNASEQ:FASTQC (FASTQC on ggal_gut)` terminated with an error exit status (127)
+Apr-03 16:18:28.735 [Task monitor] DEBUG nextflow.Session - The following nodes are still active:
+[process] RNASEQ:QUANT
+  status=ACTIVE
+  port 0: (value) OPEN  ; channel: index
+  port 1: (queue) OPEN  ; channel: -
+  port 2: (cntrl) -     ; channel: $
+
+[process] MULTIQC
+  status=ACTIVE
+  port 0: (value) OPEN  ; channel: *
+  port 1: (value) bound ; channel: config
+  port 2: (cntrl) -     ; channel: $
+
+Apr-03 16:18:28.743 [main] DEBUG nextflow.Session - Session await > all processes finished
+Apr-03 16:18:28.747 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Apr-03 16:18:28.752 [main] INFO  nextflow.Nextflow - Oops... something went wrong
+Apr-03 16:18:28.765 [main] WARN  n.processor.TaskPollingMonitor - Killing running tasks (1)
+Apr-03 16:18:28.826 [main] DEBUG nextflow.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=1; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=1; succeedDuration=0ms; failedDuration=669ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=2; peakCpus=2; peakMemory=0; ]
+Apr-03 16:18:28.932 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Apr-03 16:18:28.988 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
